@@ -1,16 +1,16 @@
 extends StaticBody2D
+export var plyer:NodePath
+var playernode:RigidBody2D
+var scam = false 
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
+func _physics_process(delta):
+	if playernode.position.x > $endpoint.global_position.x and not scam:
+		var nexplotform = load("res://platform.tscn").instance()
+		nexplotform.position = $endpoint.global_position 
+		nexplotform.playernode = playernode
+		$"..".add_child(nexplotform) 
+		
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	
+	if not playernode:
+		playernode=get_node(plyer) # Replace with function body.

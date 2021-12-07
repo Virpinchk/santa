@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/platphorm.png-64d7e29ba81a76569f507c93409a9377.stex"
+path="res://.import/SANI.png-46d247c6173d9d982c976b698446212c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://platphorm.png"
-dest_files=[ "res://.import/platphorm.png-64d7e29ba81a76569f507c93409a9377.stex" ]
+source_file="res://SANI.png"
+dest_files=[ "res://.import/SANI.png-46d247c6173d9d982c976b698446212c.stex" ]
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
+flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
