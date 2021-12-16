@@ -10,4 +10,4 @@ position = Vector2( -344, 120 )
 plyer = NodePath("../RigidBody2D")
 
 [node name="RigidBody2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( -32, 96 )
+position = Vector2( -1, 104 )
