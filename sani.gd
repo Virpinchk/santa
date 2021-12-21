@@ -1,6 +1,6 @@
 extends RigidBody2D
 var taga = 3000 #appel
-var speed = 100
+var speed = 50
 
 func _physics_process(delta):
 	applied_force=(transform.x*taga)if Input.is_action_pressed("GO") else Vector2()#appel
