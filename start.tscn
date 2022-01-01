@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://platform.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sani.tscn" type="PackedScene" id=2]
 [ext_resource path="res://elka.png" type="Texture" id=3]
+[ext_resource path="res://stena.tscn" type="PackedScene" id=4]
 
 [node name="Node2D" type="Node2D"]
 
@@ -10,21 +11,48 @@
 position = Vector2( -424, 120 )
 plyer = NodePath("../RigidBody2D")
 
+[node name="StaticBody2D5" parent="." instance=ExtResource( 1 )]
+position = Vector2( -993, 117 )
+script = null
+
+[node name="StaticBody2D6" parent="." instance=ExtResource( 1 )]
+position = Vector2( -1440.52, -175.146 )
+rotation = 0.546288
+script = null
+
+[node name="StaticBody2D7" parent="." instance=ExtResource( 1 )]
+position = Vector2( -1936.52, -479.146 )
+rotation = 0.546288
+script = null
+
+[node name="StaticBody2D9" parent="." instance=ExtResource( 1 )]
+position = Vector2( -1936.52, -479.146 )
+rotation = 0.546288
+script = null
+
+[node name="StaticBody2D8" parent="." instance=ExtResource( 1 )]
+position = Vector2( -2432.45, -735.109 )
+rotation = 0.523599
+script = null
+
 [node name="RigidBody2D" parent="." instance=ExtResource( 2 )]
 position = Vector2( -1, 104 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.5, 0 )
+motion_scale = Vector2( 0.25, 0 )
 motion_mirroring = Vector2( 2000, 0 )
 
 [node name="Elka" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( 2212, -331.967 )
+position = Vector2( 3472, 352 )
 scale = Vector2( 5, 5 )
 texture = ExtResource( 3 )
 
 [node name="Elka2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( -1782, -332 )
+position = Vector2( -528, 352 )
 scale = Vector2( 5, 5 )
 texture = ExtResource( 3 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( -512, -128 )
